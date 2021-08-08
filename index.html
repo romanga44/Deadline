@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=0.7">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/modal.css">
+  <title>Example</title>
+</head>
+<body>
+  <div class="conteiner">
+    <div class="contents">
+      <p class="button" id="Btn"><a href="#Btn">Кликни</a></p>
+    </div>
+  </div>
+
+  <div id="Modal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close">&times;</span>
+        <div class="non"><h2>Получите набор файлов <br> для руководителя:</h2>
+        </div>
+      </div>
+      <div class="modal-body">
+        <br>
+        <img src="images/doc.png" class="found">
+        <img src="images/xls.jpeg" class="found">
+        <img src="images/pdf.png" class="found">
+        <img src="images/pdf.png" class="found">
+        <img src="images/pdf.png" class="found">
+        <img src="images/pdf.png" class="found">
+        <img src="images/pdf.png" class="found">
+        <div class="Info">
+          <form action="php/send.php" method="post">
+          <br><p>Введите Email для получения файлов:</p>
+          <input class="pattern" placeholder="E-mail" type="text" name="Email"><br><br><br>
+          <p>Введите телефон для подтверждения доступа:</p>
+          <input id="tel" class="pattern" placeholder="+7 (000) 000-00-00" type="text" name="Phone" required><br><br>
+          <button type="submit" class="click" href="http://romanus44.beget.tech/#Btn">Скачать файлы<img src="images/kurs.png" id="founds" class="founds" style="position: relative; left: 10px; top: 5px;"></button><br><br>
+          <div class="mb"><pre><p>PDF 4,7 MB   DOC 0,8 MB   XLS 1,2 MB</p></pre></div>
+        </form> 
+        </div>
+      </div>
+      <div class="modal-footer">
+        <img src="images/block.png" class="block">
+        <img src="images/iPhone.png" class="ifo">
+      </div>
+    </div>
+  </div>
+  <script src="js/modal.js"></script>
+  <script src="js/mask.js"></script>
+</body>
+</html>
